@@ -37,5 +37,22 @@ class SalaryCalcTest {
         testingClass.arrTf[4].setText("88");
         testingClass.calcSalary();
         assertEquals("1720.49", testingClass.arrTf[9].getText());
+} @Test
+    void calcSalary7() throws Exception {
+        testingClass.arrTf[1].setText("320");
+        testingClass.arrTf[2].setText("8");
+        testingClass.arrTf[3].setText("21");
+        testingClass.arrTf[4].setText("15");
+        testingClass.calcSalary();
+        assertEquals("50265.60", testingClass.arrTf[9].getText());
+} 
+@Test
+    void calcSalary8() throws Exception {
+        testingClass.arrTf[1].setText("120");
+        testingClass.arrTf[2].setText("8");
+        testingClass.arrTf[3].setText("25");
+        testingClass.arrTf[4].setText("18");
+        testingClass.calcSalary();
+        assertEquals("21648.00", testingClass.arrTf[9].getText());
 } 
 } 
